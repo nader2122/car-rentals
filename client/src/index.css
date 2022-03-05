@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.contains {
+  margin-top: 60px;
+}
+span.navbar-toggler-icon {
+  background-color: rgb(182, 142, 142);
+}
+.navbar-nav {
+  margin-left: auto;
+}
+
+.carImages {
+  height: 90%;
+  width: 90%;
+  border-radius: 5px;
+  display: flex;
+  margin: 25px, 0;
+}
+.headers {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.box,
+select {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+  display: flexbox;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.modal-name {
+  margin: auto;
+}
+.img-carousel {
+  height: 400px;
+  border-radius: 8px;
+}
+
+.spinner {
+  margin-left: 50%;
+  margin-top: 25%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: rgb(20, 18, 18);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(20, 18, 18);
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ant-picker-range {
+  position: relative;
+  display: inline-flex;
+  height: 50px;
+}
+
+.ant-tabs-tab-btn {
+  font-weight: bold;
+}
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+.text {
+  font-family: 'Play', sans-serif;
+}
+
+.login {
+  height: auto;
+  margin-bottom: 150px !important;
+}
+.myProfil {
+  height: auto;
+}
+
+.profil {
+  margin-bottom: 200px !important;
+}
+.admin {
+  height: auto;
+  margin-bottom: 200px !important;
+}
+
+.covers {
+  background-image: url('../public/images/img2.jpg');
+  background-repeat: no-repeat;
+  background-color: black;
+  display: flex;
+  margin: auto;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 100px;
+  background-size: contain;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.title-date {
+  font-family: 'Play', sans-serif;
+}
+
+.navbar-nav .show > .nav-link {
+  color: rgb(238, 255, 0) !important;
+}
+
+.dropdown-item {
+  color: #4a87c3 !important;
+}
