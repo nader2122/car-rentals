@@ -40,7 +40,7 @@ const user = JSON.parse(localStorage.getItem('currentUser'))
            className="btn btn-warning mt-3 btn-lg texts"
            data-aos="zoom-in"
            onClick={handleShow}
-          >Choose Your Cars</Button>
+          >GO TO BOOKING</Button>
           </Link>)
                  }
                  
