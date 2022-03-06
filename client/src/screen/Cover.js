@@ -10,7 +10,7 @@ AOS.init({
 
 const Cover = () => {
   const [show, setShow] = useState(false);
-
+const user = JSON.parse(localStorage.getItem('currentUser'))
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -31,14 +31,26 @@ const Cover = () => {
           data-aos="zoom-in"
           onClick={handleShow}
         >
-          <h4>Let's get Started</h4>
+          {user ?  <h4>Guide Users</h4> :  <h4>Let's get Started</h4>}
+         
         </Button>
+        {user && 
+        (<Link to="/home">
+          <Button
+           className="btn btn-warning mt-3 btn-lg texts"
+           data-aos="zoom-in"
+           onClick={handleShow}
+          >Choose Your Cars</Button>
+          </Link>)
+                 }
+                 
         <Modal
           show={show}
           onHide={handleClose}
           size="lg"
           className="color-dark p-2"
         >
+         
           <Modal.Header closeButton className="bg-dark text-white">
             <Modal.Title className="ms-auto">
               <i class="fas fa-info-circle fa-2x mx-2"> Guide The User</i>
@@ -85,10 +97,10 @@ const Cover = () => {
             <Button variant="danger" onClick={handleClose}>
               Close
             </Button>
-            <Link to="/login">
+            <Link to={user ? '/home' : '/login'}>
               <Button variant="dark" onClick={handleClose}>
-                {' '}
-                Let's get Started{' '}
+                {user ? "GO TO BOOKING" : "GO TO LOGIN"}
+                
               </Button>
             </Link>
           </Modal.Footer>

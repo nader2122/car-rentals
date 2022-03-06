@@ -152,3 +152,10 @@ label {
 .dropdown-item {
   color: #4a87c3 !important;
 }
+
+.texts{
+  font-family: 'Play', sans-serif;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 13px;
+}

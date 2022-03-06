@@ -28,12 +28,13 @@ function App() {
      <Routes>
 <Route path="/login" element={<LoginScreen/>}  />
 <Route path='/register' element={<RegisterScreen/>}/>
+<Route path='/home' element={<HomeScreen/>}  />
+
+<Route path='/profil' element={<ProfileScreen/>}/>
+<Route path='/book/:bookid/:fromdate/:todate' element={<BookScreen/>} />
 
 <Route element={<PrivateRoutes/>}>
 
-<Route path='/home' element={<HomeScreen/>}  />
-<Route path='/book/:bookid/:fromdate/:todate' element={<BookScreen/>} />
-<Route path='/profil' element={<ProfileScreen/>}/>
 <Route path='/userstable' element={<UsersTable/>}/>
 <Route path='/bookedtable' element={<BookedTable/>}/>
 <Route path='/carstable' element={<CarsTable/>}/>

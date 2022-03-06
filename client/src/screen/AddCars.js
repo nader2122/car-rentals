@@ -67,7 +67,7 @@ const AddCars = () => {
     <div className="box m-5 p-5">
       <Row className=" m-5 p-5">
         {loading && <Loader />}
-
+         <h1>Add Your Cars</h1>
         <Col md={5}>
           <Form.Control
             type="text"

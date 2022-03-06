@@ -1,8 +1,8 @@
 import { Navigate, Outlet } from "react-router-dom";
 
 const useAuth = () => {
-  const user = { loggedIn: false };
-  return user && user.loggedIn;
+  const user =  JSON.parse(localStorage.getItem('currentUser'));
+  return user.isAdmin === true && user;
 };
 
 const PrivateRoutes = () => {
