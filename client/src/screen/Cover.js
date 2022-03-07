@@ -16,7 +16,7 @@ const user = JSON.parse(localStorage.getItem('currentUser'))
 
   return (
     <Row className="text-center covers">
-      <Col md={12}>
+      <Col md={11}>
         <div data-aos="fade-right">
           <h1 style={{ marginTop: '200px', color: 'white', fontSize: '65px' }}>
             WELCOME TO PRO RENTEL CAR

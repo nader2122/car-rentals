@@ -6,7 +6,7 @@ import {
   Form,
   Button,
   FloatingLabel,
-  Container,
+  
 } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import Loader from 'react-spinners/RiseLoader';
@@ -37,7 +37,7 @@ const AddCars = () => {
     };
     try {
       setLoading(true);
-      const result = await (await axios.post('api/cars/addcar', newCar)).data;
+      await (await axios.post('api/cars/addcar',newCar)).data;
       setLoading(false);
       Swal.fire({
         position: 'top',
@@ -64,11 +64,12 @@ const AddCars = () => {
   };
 
   return (
-    <div className="box m-5 p-5">
-      <Row className=" m-5 p-5">
+    <div className="box m-3 py-5">
+      
+      <Row className=" mx-3 py-5">
         {loading && <Loader />}
-         <h1>Add Your Cars</h1>
-        <Col md={5}>
+        <h1>Add Your Cars</h1>
+        <Col md={5} sm={12}>
           <Form.Control
             type="text"
             placeholder="Car name"
@@ -106,7 +107,7 @@ const AddCars = () => {
             className="mb-2 pb-2"
           />
         </Col>
-        <Col md={5}>
+        <Col md={5} sm={12}>
           <Form.Control
             type="text"
             placeholder="Car Image1"

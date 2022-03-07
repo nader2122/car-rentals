@@ -61,7 +61,7 @@ const MyBookings = () => {
     setLoading(false);
   }
   return (
-    <div className="p-2 m-2 profil">
+    <div className="py-2 my-2 profil">
       <Row>
         <Col md={8}>
           {loading ? (
@@ -71,7 +71,7 @@ const MyBookings = () => {
           ) : (
             mybookings.map((booking) => {
               return (
-                <div className="box m-5 p-5">
+                <div className="box my-3 py-3">
                   <h3>{booking.car}</h3>
                   <hr />
                   <br />

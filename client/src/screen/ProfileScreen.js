@@ -17,7 +17,7 @@ const ProfileScreen = () => {
   });
 
   return (
-    <div className="profil p-5 m-5">
+    <div className="profil p-5 my-5">
       <Tabs defaultActiveKey="1">
         <TabPane tab="Profil" key="1">
           <h2 className="text-center">
@@ -26,8 +26,8 @@ const ProfileScreen = () => {
           <hr />
           <br />
           <Row className="justify-content-center myProfil">
-            <Col md={5}>
-              <Card className="box p-2 text-center">
+            <Col md={10} sm={12} >
+              <Card className="box py-2 text-center">
                 <h4>
                   <b>First Name: </b> {user.firstName}
                 </h4>

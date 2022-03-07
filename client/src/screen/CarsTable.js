@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Loader from '../component/Loader';
 import { Row, Col, Table, Button} from 'react-bootstrap';
-import {Link, useNavigate} from 'react-router-dom';
 import Swal from 'sweetalert2'
 
 
@@ -63,11 +62,11 @@ const CarsTable = () => {
   return (
     <div className='box my-3 py-3'>
          <Row style={{ justifyContent: 'center',marginBottom:"20px"}} >
-        <Col md={10} >
+        <Col md={12} >
           <h4 className="text-center">Cars Table</h4>
           {loading && <Loader />}
           <div className='p-3 m-5'>
-          <Table striped bordered hover variant="dark" className="text-center">
+          <Table striped bordered hover variant="dark" className="text-center" responsive="sm">
             <thead>
               <tr>
                 <th>Car ID</th>

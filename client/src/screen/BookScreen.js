@@ -96,7 +96,7 @@ const BookScreen = () => {
                   className="carImages img-fluid"
                 />
               </Col>
-              <Col md={5} className="pl-2">
+              <Col md={5} sm={12} className="mt-5 pt-3">
                 <h1>Booking Details</h1>
                 <hr />
                 <p>

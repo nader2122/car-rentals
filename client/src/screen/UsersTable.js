@@ -27,10 +27,10 @@ const UsersTable = () => {
   return (
     <div className="box my-5 py-5 ">
       <Row style={{ justifyContent: 'center' }} className=" m-5 p-5">
-        <Col md={10}>
+        <Col md={12}>
           <h4 className="text-center">Cars Table</h4>
           {loading && <Loader />}
-          <Table striped bordered hover variant="dark" className="text-center">
+          <Table striped bordered hover variant="dark" className="text-center" responsive="sm">
             <thead>
               <tr>
                 <th>User Id</th>
