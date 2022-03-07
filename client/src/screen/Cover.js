@@ -15,8 +15,8 @@ const user = JSON.parse(localStorage.getItem('currentUser'))
   const handleShow = () => setShow(true);
 
   return (
-    <Row className="text-center covers">
-      <Col md={11}>
+    <Row className="text-center covers py-5">
+      <Col md={11} sm={11}>
         <div data-aos="fade-right">
           <h1 style={{ marginTop: '200px', color: 'white', fontSize: '65px' }}>
             WELCOME TO PRO RENTEL CAR
