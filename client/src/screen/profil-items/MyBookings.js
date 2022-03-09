@@ -71,7 +71,7 @@ const MyBookings = () => {
           ) : (
             mybookings.map((booking) => {
               return (
-                <div className="box my-3 py-3">
+                <div className="box m-3 py-5">
                   <h3>{booking.car}</h3>
                   <hr />
                   <br />
@@ -96,7 +96,7 @@ const MyBookings = () => {
                     )}
                   </h5>
                   {booking.status !== 'cancelled' && (
-                    <div style={{ float: 'right' }}>
+                    <div style={{ float: 'right', paddingBottom:'20px' }}>
                       <Button
                         className="btn btn-danger"
                         onClick={() =>
