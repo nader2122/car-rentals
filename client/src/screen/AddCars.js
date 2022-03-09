@@ -35,6 +35,15 @@ const AddCars = () => {
       description,
       imageurls: [imageurl1, imageurl2, imageurl3],
     };
+    if(!name || !type || !maxplace || !rentperday || !model || !description || !imageurl1 || !imageurl2 || !imageurl3){
+      Swal.fire({
+        position: 'top',
+        icon: 'warning',
+        title: 'Somthings Not complited!',
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    }
     try {
       setLoading(true);
       await (await axios.post('api/cars/addcar',newCar)).data;
