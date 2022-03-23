@@ -24,6 +24,7 @@ function Car({ car, fromdate, todate }) {
             <p>Type : {car.type}</p>
             <p>Max Places : {car.maxplace}</p>
             <p>Model : {car.model}</p>
+            <p>Rent/Day : {car.rentperday} DT</p>
           </b>
           <div style={{ boxShadow: 'none', paddingTop: '20px' }}>
             <Button className="btn btn-secondary m-2" onClick={handleShow}>

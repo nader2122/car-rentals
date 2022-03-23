@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
      <NavBar/>
+     <main className='mains'>
      <Routes>
 <Route path="/login" element={<LoginScreen/>}  />
 <Route path='/register' element={<RegisterScreen/>}/>
@@ -45,6 +46,7 @@ function App() {
 <Route path='/' element={<Cover/>}/>
 
      </Routes>
+     </main>
      <Footer/>
     </div>
   );

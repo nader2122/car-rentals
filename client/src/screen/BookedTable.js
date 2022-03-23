@@ -97,11 +97,12 @@ const BookedTable = () => {
   }
 
   return (
-    <div className="box my-5 py-5">
-      <Row style={{ justifyContent: 'center', marginBottom: '200px' }} className=" m-5 p-5">
+    <div className='my-5 py-2'>
+      <Row>
         <Col md={12} >
-          <h4 className="text-center">Bookings Table</h4>
+          <h4 className="text-center mt-5">Bookings Table</h4>
           {loading && <Loader />}
+          <div className='mx-2'>
           <Table striped bordered hover variant="dark" className="text-center" responsive="sm">
             <thead>
               <tr>
@@ -159,6 +160,7 @@ const BookedTable = () => {
                 })
               : error}
           </Table>
+          </div>
         </Col>
       </Row>
     </div>

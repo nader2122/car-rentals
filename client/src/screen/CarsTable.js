@@ -60,12 +60,12 @@ const CarsTable = () => {
 
  
   return (
-    <div className='box my-3 py-3'>
-         <Row style={{ justifyContent: 'center',marginBottom:"20px"}} >
+    <div className='my-5 py-2'>
+         <Row>
         <Col md={12} >
-          <h4 className="text-center">Cars Table</h4>
+          <h4 className="text-center mt-5">Cars Table</h4>
           {loading && <Loader />}
-          <div className='p-3 m-5'>
+          <div className='mx-2'>
           <Table striped bordered hover variant="dark" className="text-center" responsive="sm">
             <thead>
               <tr>

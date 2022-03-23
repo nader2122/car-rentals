@@ -29,6 +29,9 @@ body {
   background: #1b1a1a; 
 }
 
+.mains{
+  min-height: 80vh;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
