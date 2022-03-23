@@ -61,8 +61,8 @@ const MyBookings = () => {
     setLoading(false);
   }
   return (
-    <div className="my-2">
-      <Row>
+    <div >
+      <Row className="justify-content-center">
         <Col md={8}>
           {loading ? (
             <Loader />
@@ -71,8 +71,8 @@ const MyBookings = () => {
           ) : (
             mybookings.map((booking) => {
               return (
-                <div className="box py-5 mx-1 px-1">
-                  <h3>{booking.car}</h3>
+                <div className="box py-5 mx-1 px-2">
+                  <h3 className='text-center'>{booking.car}</h3>
                   <hr />
                   <br />
                   <h5>
