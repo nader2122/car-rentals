@@ -15,10 +15,10 @@ const user = JSON.parse(localStorage.getItem('currentUser'))
   const handleShow = () => setShow(true);
 
   return (
-    <Row className="text-center covers py-5">
+    <Row className="text-center covers ">
       <Col md={11} sm={11}>
-        <div data-aos="fade-right">
-          <h1 style={{ marginTop: '200px', color: 'white', fontSize: '65px' }}>
+        <div data-aos="fade-right" className='py-5 mt-5'>
+          <h1 style={{color: 'white', fontSize: '65px' }}className='pb-3'>
             WELCOME TO PRO RENTEL CAR
           </h1>
         </div>
@@ -27,7 +27,7 @@ const user = JSON.parse(localStorage.getItem('currentUser'))
         </h2>
 
         <Button
-          className="btn btn-warning mt-3 btn-lg"
+          className="btn btn-warning mb-3 pb-2 btn-lg"
           data-aos="zoom-in"
           onClick={handleShow}
         >
@@ -37,7 +37,7 @@ const user = JSON.parse(localStorage.getItem('currentUser'))
         {user && 
         (<Link to="/home">
           <Button
-           className="btn btn-warning mt-3 btn-lg texts"
+           className="btn btn-warning mb-3 pb-2 btn-lg texts"
            data-aos="zoom-in"
            onClick={handleShow}
           >GO TO BOOKING</Button>

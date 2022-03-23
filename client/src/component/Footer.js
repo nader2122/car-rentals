@@ -8,7 +8,6 @@ const Footer = () => {
       style={{
         position: 'relative',
         bottom: '0',
-        marginTop: '5px',
         height: 'auto',
       }}
     >

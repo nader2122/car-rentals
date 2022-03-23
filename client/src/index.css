@@ -153,10 +153,9 @@ label {
   background-repeat: no-repeat;
   background-color: black;
   display: flex;
-  margin: auto;
   background-position: center;
-  height: 100%;
-  width: 100%;
+  min-height: 80vh;
+  min-width: 100%;
   background-size: contain;
 }
 
