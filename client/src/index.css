@@ -134,16 +134,18 @@ label {
   height: auto;
   margin-bottom: 150px !important;
 }
-.myProfil {
-  height: auto;
-}
 
-.profil {
-  margin-bottom: 200px !important;
-}
+
+
 .admin {
   height: auto;
   margin-bottom: 200px !important;
+}
+.ant-tabs-nav-wrap{
+  color: rgba(0, 0, 0, 0.644);
+  font-size: 60px;
+  font-weight: bold;
+
 }
 
 .covers {

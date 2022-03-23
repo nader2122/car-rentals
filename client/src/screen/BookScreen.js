@@ -68,7 +68,7 @@ const BookScreen = () => {
     try {
       await axios.post('/api/bookings/bookcar', bookingDetails);
       Swal.fire({
-        position: 'center',
+        position: 'top',
         icon: 'success',
         title: 'You Booked Successfuly',
         showConfirmButton: false,
@@ -81,13 +81,13 @@ const BookScreen = () => {
   };
 
   return (
-    <div class="m-3 pt-1">
+    <div class="my-5 py-2">
       {loading ? (
         <Loader />
       ) : car ? (
-        <div className="m-5" data-aos="fade-up">
+        <div data-aos="fade-up">
           <Container>
-            <Row className="mt-3 box">
+            <Row className="py-5 box">
               <Col md={7}>
                 <h1>{car.name}</h1>
                 <img

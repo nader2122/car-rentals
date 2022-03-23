@@ -44,7 +44,7 @@ const MyBookings = () => {
         carid: carid,
       });
       Swal.fire({
-        position: 'center',
+        position: 'top',
         icon: 'warning',
         title: 'Your Booked cancelled',
         showConfirmButton: false,
@@ -61,7 +61,7 @@ const MyBookings = () => {
     setLoading(false);
   }
   return (
-    <div className="py-2 my-2 profil">
+    <div className="my-2">
       <Row>
         <Col md={8}>
           {loading ? (
@@ -71,7 +71,7 @@ const MyBookings = () => {
           ) : (
             mybookings.map((booking) => {
               return (
-                <div className="box m-3 py-5">
+                <div className="box py-5 mx-1 px-1">
                   <h3>{booking.car}</h3>
                   <hr />
                   <br />
